@@ -1,6 +1,5 @@
-## Few-Shot Dermoscopic Image Segmentation with a Frozen Self-Supervised Pretrained Encoder
-# Instructions for replication
----
+# Few-Shot Dermoscopic Image Segmentation with a Frozen Self-Supervised Pretrained Encoder ─── Instructions for Replication
+
 ## Step 1. Directory Preparation
 (1) Create the following structure of directories.
 You can run:
@@ -17,12 +16,11 @@ mkdir {Your Home Folder}/ISIC2017_resized
 ├──── ISIC2017_resized\
 \
 (2) Clone this repository to `{Your Home Folder}/src`.
----
+
 
 ## Step 2. Download Data
 (1) Download all the data relaetd to **Task-1** from  [ISIC](https://challenge.isic-archive.com/data/#2017).\
 (2) Unzip the data to `{Your Home Folder}/ISIC2017` and **keep the original folder names**.
----
 
 ## Step 3. Data Preprocessing
 (1) Diriect the terminal to `{Your Home Folder}/src/data`:
@@ -38,7 +36,6 @@ python ./preprocess.py --subset test --input_dir ../../ISIC2017 --output_dir ../
 
 **Note:** \
 You may use `{Your Home Folder}/src/data/preprocessing_visualization.ipynb` to check whether the previous steps are completed.
----
 
 ## Step 4. Pre-Training
 (1) Diriect the terminal to `{Your Home Folder}/src`:
@@ -61,7 +58,6 @@ Customizable main function arguments include:
 ...
 ```
 For the other data path arguments, it is **highly recommended** to use the default values.
----
 
 ## Step 5. Training 
 (1) Diriect the terminal to `{Your Home Folder}/src`:
@@ -106,7 +102,6 @@ Customizable main function arguments include:
 ...
 ```
 For the other data path arguments, it is **highly recommended** to use the default values.
----
 
 ## Step 6. Evaluation
 (1) Diriect the terminal to `{Your Home Folder}/src`:
